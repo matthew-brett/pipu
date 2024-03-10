@@ -81,7 +81,7 @@ def test_as_import(script: PipTestEnvironment) -> None:
     """test that pip.__init__.py does not shadow
     the command submodule with a dictionary
     """
-    import pip._internal.commands.install as inst
+    import pipu._internal.commands.install as inst
 
     assert inst is not None
 

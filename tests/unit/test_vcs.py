@@ -5,15 +5,15 @@ from unittest import TestCase, mock
 
 import pytest
 
-from pip._internal.exceptions import BadCommand, InstallationError
-from pip._internal.utils.misc import HiddenText, hide_url, hide_value
-from pip._internal.utils.subprocess import CommandArgs
-from pip._internal.vcs import make_vcs_requirement_url
-from pip._internal.vcs.bazaar import Bazaar
-from pip._internal.vcs.git import Git, RemoteNotValidError, looks_like_hash
-from pip._internal.vcs.mercurial import Mercurial
-from pip._internal.vcs.subversion import Subversion
-from pip._internal.vcs.versioncontrol import RevOptions, VersionControl
+from pipu._internal.exceptions import BadCommand, InstallationError
+from pipu._internal.utils.misc import HiddenText, hide_url, hide_value
+from pipu._internal.utils.subprocess import CommandArgs
+from pipu._internal.vcs import make_vcs_requirement_url
+from pipu._internal.vcs.bazaar import Bazaar
+from pipu._internal.vcs.git import Git, RemoteNotValidError, looks_like_hash
+from pipu._internal.vcs.mercurial import Mercurial
+from pipu._internal.vcs.subversion import Subversion
+from pipu._internal.vcs.versioncontrol import RevOptions, VersionControl
 from tests.lib import is_svn_installed, need_svn
 
 
@@ -191,7 +191,7 @@ def test_git_remote_url_to_pip(url: str, target: str) -> None:
 def test_paths_are_not_mistaken_for_scp_shorthand(url: str, platform: str) -> None:
     # File paths should not be mistaken for SCP shorthand. If they do then
     # 'c:/piffle/wiffle' would end up as 'ssh://c/piffle/wiffle'.
-    from pip._internal.vcs.git import SCP_REGEX
+    from pipu._internal.vcs.git import SCP_REGEX
 
     assert not SCP_REGEX.match(url)
 

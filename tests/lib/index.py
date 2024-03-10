@@ -1,7 +1,7 @@
 from typing import Optional
 
-from pip._internal.models.candidate import InstallationCandidate
-from pip._internal.models.link import Link
+from pipu._internal.models.candidate import InstallationCandidate
+from pipu._internal.models.link import Link
 
 
 def make_mock_candidate(

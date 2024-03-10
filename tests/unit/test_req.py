@@ -10,26 +10,26 @@ from typing import Iterator, Optional, Set, Tuple, cast
 from unittest import mock
 
 import pytest
-from pip._vendor.packaging.markers import Marker
-from pip._vendor.packaging.requirements import Requirement
+from pipu._vendor.packaging.markers import Marker
+from pipu._vendor.packaging.requirements import Requirement
 
-from pip._internal.cache import WheelCache
-from pip._internal.commands import create_command
-from pip._internal.commands.install import InstallCommand
-from pip._internal.exceptions import (
+from pipu._internal.cache import WheelCache
+from pipu._internal.commands import create_command
+from pipu._internal.commands.install import InstallCommand
+from pipu._internal.exceptions import (
     HashErrors,
     InstallationError,
     InvalidWheelFilename,
     PreviousBuildDirError,
 )
-from pip._internal.index.package_finder import PackageFinder
-from pip._internal.models.direct_url import ArchiveInfo, DirectUrl, DirInfo, VcsInfo
-from pip._internal.models.link import Link
-from pip._internal.network.session import PipSession
-from pip._internal.operations.build.build_tracker import get_build_tracker
-from pip._internal.operations.prepare import RequirementPreparer
-from pip._internal.req import InstallRequirement, RequirementSet
-from pip._internal.req.constructors import (
+from pipu._internal.index.package_finder import PackageFinder
+from pipu._internal.models.direct_url import ArchiveInfo, DirectUrl, DirInfo, VcsInfo
+from pipu._internal.models.link import Link
+from pipu._internal.network.session import PipSession
+from pipu._internal.operations.build.build_tracker import get_build_tracker
+from pipu._internal.operations.prepare import RequirementPreparer
+from pipu._internal.req import InstallRequirement, RequirementSet
+from pipu._internal.req.constructors import (
     _get_url_from_path,
     _looks_like_path,
     install_req_drop_extras,
@@ -40,12 +40,12 @@ from pip._internal.req.constructors import (
     install_req_from_req_string,
     parse_editable,
 )
-from pip._internal.req.req_file import (
+from pipu._internal.req.req_file import (
     ParsedLine,
     get_line_parser,
     handle_requirement_line,
 )
-from pip._internal.resolution.legacy.resolver import Resolver
+from pipu._internal.resolution.legacy.resolver import Resolver
 from tests.lib import TestData, make_test_finder, requirements_file, wheel
 
 

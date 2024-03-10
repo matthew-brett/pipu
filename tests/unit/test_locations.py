@@ -14,7 +14,7 @@ from unittest.mock import Mock
 
 import pytest
 
-from pip._internal.locations import SCHEME_KEYS, _should_use_sysconfig, get_scheme
+from pipu._internal.locations import SCHEME_KEYS, _should_use_sysconfig, get_scheme
 
 if sys.platform == "win32":
     pwd = Mock()

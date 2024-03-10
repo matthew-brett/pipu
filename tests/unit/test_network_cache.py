@@ -4,9 +4,9 @@ from typing import Iterator
 from unittest.mock import Mock
 
 import pytest
-from pip._vendor.cachecontrol.caches import FileCache
+from pipu._vendor.cachecontrol.caches import FileCache
 
-from pip._internal.network.cache import SafeFileCache
+from pipu._internal.network.cache import SafeFileCache
 
 
 @pytest.fixture(scope="function")

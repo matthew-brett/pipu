@@ -1,11 +1,11 @@
 import os
 from pathlib import Path
 
-from pip._vendor.packaging.tags import Tag, interpreter_name, interpreter_version
+from pipu._vendor.packaging.tags import Tag, interpreter_name, interpreter_version
 
-from pip._internal.cache import WheelCache, _hash_dict
-from pip._internal.models.link import Link
-from pip._internal.utils.misc import ensure_dir
+from pipu._internal.cache import WheelCache, _hash_dict
+from pipu._internal.models.link import Link
+from pipu._internal.utils.misc import ensure_dir
 
 
 def test_falsey_path_none() -> None:

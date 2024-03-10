@@ -4,8 +4,8 @@ from textwrap import dedent
 
 import pytest
 
-from pip._internal.exceptions import InstallationError, InvalidPyProjectBuildRequires
-from pip._internal.req import InstallRequirement
+from pipu._internal.exceptions import InstallationError, InvalidPyProjectBuildRequires
+from pipu._internal.req import InstallRequirement
 from tests.lib import TestData
 
 

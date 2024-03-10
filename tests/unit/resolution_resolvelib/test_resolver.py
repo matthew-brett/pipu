@@ -2,15 +2,15 @@ from typing import Dict, List, Optional, Set, Tuple, cast
 from unittest import mock
 
 import pytest
-from pip._vendor.packaging.utils import canonicalize_name
-from pip._vendor.resolvelib.resolvers import Result
-from pip._vendor.resolvelib.structs import DirectedGraph
+from pipu._vendor.packaging.utils import canonicalize_name
+from pipu._vendor.resolvelib.resolvers import Result
+from pipu._vendor.resolvelib.structs import DirectedGraph
 
-from pip._internal.index.package_finder import PackageFinder
-from pip._internal.operations.prepare import RequirementPreparer
-from pip._internal.req.constructors import install_req_from_line
-from pip._internal.req.req_set import RequirementSet
-from pip._internal.resolution.resolvelib.resolver import (
+from pipu._internal.index.package_finder import PackageFinder
+from pipu._internal.operations.prepare import RequirementPreparer
+from pipu._internal.req.constructors import install_req_from_line
+from pipu._internal.req.req_set import RequirementSet
+from pipu._internal.resolution.resolvelib.resolver import (
     Resolver,
     get_topological_weights,
 )

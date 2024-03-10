@@ -1,9 +1,9 @@
 import pytest
-from pip._vendor.packaging.tags import Tag
+from pipu._vendor.packaging.tags import Tag
 
-from pip._internal.exceptions import InvalidWheelFilename
-from pip._internal.models.wheel import Wheel
-from pip._internal.utils import compatibility_tags
+from pipu._internal.exceptions import InvalidWheelFilename
+from pipu._internal.models.wheel import Wheel
+from pipu._internal.utils import compatibility_tags
 
 
 class TestWheelFile:

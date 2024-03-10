@@ -4,7 +4,7 @@ from pathlib import Path
 from typing import List, Optional, Tuple
 from zipfile import ZipFile
 
-from pip._internal.utils.urls import path_to_url
+from pipu._internal.utils.urls import path_to_url
 from tests.lib import PipTestEnvironment, create_basic_sdist_for_package
 
 PYPROJECT_TOML = """\

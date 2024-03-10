@@ -10,8 +10,8 @@ from unittest.mock import Mock
 
 import pytest
 
-from pip._internal.req.constructors import install_req_from_line
-from pip._internal.utils.misc import rmtree
+from pipu._internal.req.constructors import install_req_from_line
+from pipu._internal.utils.misc import rmtree
 from tests.lib import (
     PipTestEnvironment,
     TestData,
@@ -499,8 +499,8 @@ def test_uninstallpathset_no_paths(caplog: pytest.LogCaptureFixture) -> None:
     Test UninstallPathSet logs notification when there are no paths to
     uninstall
     """
-    from pip._internal.metadata import get_default_environment
-    from pip._internal.req.req_uninstall import UninstallPathSet
+    from pipu._internal.metadata import get_default_environment
+    from pipu._internal.req.req_uninstall import UninstallPathSet
 
     caplog.set_level(logging.INFO)
 

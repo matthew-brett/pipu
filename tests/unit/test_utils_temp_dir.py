@@ -8,9 +8,9 @@ from unittest import mock
 
 import pytest
 
-from pip._internal.utils import temp_dir
-from pip._internal.utils.misc import ensure_dir
-from pip._internal.utils.temp_dir import (
+from pipu._internal.utils import temp_dir
+from pipu._internal.utils.misc import ensure_dir
+from pipu._internal.utils.temp_dir import (
     AdjacentTempDirectory,
     TempDirectory,
     _Default,

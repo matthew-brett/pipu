@@ -5,7 +5,7 @@ from typing import Optional
 
 import pytest
 
-from pip._internal.utils.urls import get_url_scheme, path_to_url, url_to_path
+from pipu._internal.utils.urls import get_url_scheme, path_to_url, url_to_path
 
 
 @pytest.mark.parametrize(

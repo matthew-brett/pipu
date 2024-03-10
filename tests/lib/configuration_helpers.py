@@ -8,10 +8,10 @@ import tempfile
 import textwrap
 from typing import Any, Dict, Iterator
 
-import pip._internal.configuration
-from pip._internal.utils.misc import ensure_dir
+import pipu._internal.configuration
+from pipu._internal.utils.misc import ensure_dir
 
-# This is so that tests don't need to import pip._internal.configuration.
+# This is so that tests don't need to import pipu._internal.configuration.
 Kind = pip._internal.configuration.Kind
 kinds = pip._internal.configuration.kinds
 

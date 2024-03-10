@@ -10,11 +10,11 @@ from typing import Dict, List, Optional, Tuple
 from unittest import mock
 
 import pytest
-from pip._vendor import requests
-from pip._vendor.packaging.requirements import Requirement
+from pipu._vendor import requests
+from pipu._vendor.packaging.requirements import Requirement
 
-from pip._internal.exceptions import NetworkConnectionError
-from pip._internal.index.collector import (
+from pipu._internal.exceptions import NetworkConnectionError
+from pipu._internal.index.collector import (
     IndexContent,
     LinkCollector,
     _get_index_content,
@@ -24,17 +24,17 @@ from pip._internal.index.collector import (
     _NotHTTP,
     parse_links,
 )
-from pip._internal.index.sources import _FlatDirectorySource, _IndexDirectorySource
-from pip._internal.models.candidate import InstallationCandidate
-from pip._internal.models.index import PyPI
-from pip._internal.models.link import (
+from pipu._internal.index.sources import _FlatDirectorySource, _IndexDirectorySource
+from pipu._internal.models.candidate import InstallationCandidate
+from pipu._internal.models.index import PyPI
+from pipu._internal.models.link import (
     Link,
     LinkHash,
     MetadataFile,
     _clean_url_path,
     _ensure_quoted_url,
 )
-from pip._internal.network.session import PipSession
+from pipu._internal.network.session import PipSession
 from tests.lib import TestData, make_test_link_collector
 
 ACCEPT = ", ".join(

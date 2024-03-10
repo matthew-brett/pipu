@@ -5,9 +5,9 @@ import sys
 from unittest import mock
 
 import pytest
-from pip._vendor import platformdirs
+from pipu._vendor import platformdirs
 
-from pip._internal.utils import appdirs
+from pipu._internal.utils import appdirs
 
 
 class TestUserCacheDir:
@@ -80,7 +80,7 @@ class TestUserCacheDir:
         assert result_is_str, "user_cache_dir did not return a str"
 
         # Test against regression #3463
-        from pip._internal.cli.main_parser import create_main_parser
+        from pipu._internal.cli.main_parser import create_main_parser
 
         create_main_parser().print_help()  # This should not crash
 

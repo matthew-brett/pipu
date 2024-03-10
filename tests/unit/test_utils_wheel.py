@@ -8,8 +8,8 @@ from zipfile import ZipFile
 
 import pytest
 
-from pip._internal.exceptions import UnsupportedWheel
-from pip._internal.utils import wheel
+from pipu._internal.exceptions import UnsupportedWheel
+from pipu._internal.utils import wheel
 from tests.lib import TestData
 
 _ZipDir = Callable[[Path], ZipFile]

@@ -2,21 +2,21 @@ from typing import Iterator
 
 import pytest
 
-from pip._internal.cli.req_command import RequirementCommand
-from pip._internal.commands.install import InstallCommand
-from pip._internal.index.collector import LinkCollector
-from pip._internal.index.package_finder import PackageFinder
+from pipu._internal.cli.req_command import RequirementCommand
+from pipu._internal.commands.install import InstallCommand
+from pipu._internal.index.collector import LinkCollector
+from pipu._internal.index.package_finder import PackageFinder
 
-# from pip._internal.models.index import PyPI
-from pip._internal.models.search_scope import SearchScope
-from pip._internal.models.selection_prefs import SelectionPreferences
-from pip._internal.network.session import PipSession
-from pip._internal.operations.build.build_tracker import get_build_tracker
-from pip._internal.operations.prepare import RequirementPreparer
-from pip._internal.req.constructors import install_req_from_line
-from pip._internal.resolution.resolvelib.factory import Factory
-from pip._internal.resolution.resolvelib.provider import PipProvider
-from pip._internal.utils.temp_dir import TempDirectory, global_tempdir_manager
+# from pipu._internal.models.index import PyPI
+from pipu._internal.models.search_scope import SearchScope
+from pipu._internal.models.selection_prefs import SelectionPreferences
+from pipu._internal.network.session import PipSession
+from pipu._internal.operations.build.build_tracker import get_build_tracker
+from pipu._internal.operations.prepare import RequirementPreparer
+from pipu._internal.req.constructors import install_req_from_line
+from pipu._internal.resolution.resolvelib.factory import Factory
+from pipu._internal.resolution.resolvelib.provider import PipProvider
+from pipu._internal.utils.temp_dir import TempDirectory, global_tempdir_manager
 from tests.lib import TestData
 
 

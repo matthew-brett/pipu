@@ -10,9 +10,9 @@ from unittest.mock import ANY, Mock, patch
 
 import pytest
 from freezegun import freeze_time
-from pip._vendor.packaging.version import Version
+from pipu._vendor.packaging.version import Version
 
-from pip._internal import self_outdated_check
+from pipu._internal import self_outdated_check
 
 
 @pytest.mark.parametrize(

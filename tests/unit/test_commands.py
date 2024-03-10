@@ -3,13 +3,13 @@ from unittest import mock
 
 import pytest
 
-from pip._internal.cli.base_command import Command
-from pip._internal.cli.req_command import (
+from pipu._internal.cli.base_command import Command
+from pipu._internal.cli.req_command import (
     IndexGroupCommand,
     RequirementCommand,
     SessionCommandMixin,
 )
-from pip._internal.commands import commands_dict, create_command
+from pipu._internal.commands import commands_dict, create_command
 
 # These are the expected names of the commands whose classes inherit from
 # IndexGroupCommand.

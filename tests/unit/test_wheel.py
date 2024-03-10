@@ -11,26 +11,26 @@ from typing import Dict, List, Optional, Tuple, cast
 from unittest.mock import patch
 
 import pytest
-from pip._vendor.packaging.requirements import Requirement
+from pipu._vendor.packaging.requirements import Requirement
 
-from pip._internal.exceptions import InstallationError
-from pip._internal.locations import get_scheme
-from pip._internal.models.direct_url import (
+from pipu._internal.exceptions import InstallationError
+from pipu._internal.locations import get_scheme
+from pipu._internal.models.direct_url import (
     DIRECT_URL_METADATA_NAME,
     ArchiveInfo,
     DirectUrl,
 )
-from pip._internal.models.scheme import Scheme
-from pip._internal.operations.build.wheel_legacy import get_legacy_build_wheel_path
-from pip._internal.operations.install import wheel
-from pip._internal.operations.install.wheel import (
+from pipu._internal.models.scheme import Scheme
+from pipu._internal.operations.build.wheel_legacy import get_legacy_build_wheel_path
+from pipu._internal.operations.install import wheel
+from pipu._internal.operations.install.wheel import (
     InstalledCSVRow,
     RecordPath,
     get_console_script_specs,
 )
-from pip._internal.utils.compat import WINDOWS
-from pip._internal.utils.misc import hash_file
-from pip._internal.utils.unpacking import unpack_file
+from pipu._internal.utils.compat import WINDOWS
+from pipu._internal.utils.misc import hash_file
+from pipu._internal.utils.unpacking import unpack_file
 from tests.lib import DATA_DIR, TestData, assert_paths_equal
 from tests.lib.wheel import make_wheel
 
@@ -256,8 +256,8 @@ def test_wheel_root_is_purelib(text: str, expected: bool) -> None:
 
 
 def test_dist_from_broken_wheel_fails(data: TestData) -> None:
-    from pip._internal.exceptions import InvalidWheel
-    from pip._internal.metadata import FilesystemWheel, get_wheel_distribution
+    from pipu._internal.exceptions import InvalidWheel
+    from pipu._internal.metadata import FilesystemWheel, get_wheel_distribution
 
     package = data.packages.joinpath("corruptwheel-1.0-py2.py3-none-any.whl")
     with pytest.raises(InvalidWheel):

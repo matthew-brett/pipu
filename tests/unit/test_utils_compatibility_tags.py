@@ -4,7 +4,7 @@ from unittest.mock import patch
 
 import pytest
 
-from pip._internal.utils import compatibility_tags
+from pipu._internal.utils import compatibility_tags
 
 
 @pytest.mark.parametrize(
@@ -43,7 +43,7 @@ class Testcompatibility_tags:
         """
         Test that no tag contains a hyphen.
         """
-        import pip._internal.utils.compatibility_tags
+        import pipu._internal.utils.compatibility_tags
 
         mock_gcf = self.mock_get_config_var(SOABI="cpython-35m-darwin")
 

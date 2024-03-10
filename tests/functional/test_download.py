@@ -9,8 +9,8 @@ from typing import Callable, List, Tuple
 
 import pytest
 
-from pip._internal.cli.status_codes import ERROR
-from pip._internal.utils.urls import path_to_url
+from pipu._internal.cli.status_codes import ERROR
+from pipu._internal.utils.urls import path_to_url
 from tests.lib import (
     PipTestEnvironment,
     ScriptFactory,
@@ -1210,7 +1210,7 @@ def test_download_use_pep517_propagation(
         setup_py_prelude=textwrap.dedent(
             """\
             try:
-                import pip
+                import pipu
             except ImportError:
                 pass
             else:

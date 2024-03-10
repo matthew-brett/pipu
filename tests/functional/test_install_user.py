@@ -29,7 +29,7 @@ def _patch_dist_in_site_packages(virtualenv: VirtualEnvironment) -> None:
         def dist_in_site_packages(dist):
             return False
 
-        from pip._internal.metadata.base import BaseDistribution
+        from pipu._internal.metadata.base import BaseDistribution
         BaseDistribution.in_site_packages = property(dist_in_site_packages)
     """
     )
@@ -317,7 +317,7 @@ class Tests_UserSite:
         resultp = script.run(
             "python",
             "-c",
-            "from pip._internal.metadata import get_default_environment; "
+            "from pipu._internal.metadata import get_default_environment; "
             "print(get_default_environment().get_distribution('pkg').location)",
         )
         dist_location = resultp.stdout.strip()

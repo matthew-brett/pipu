@@ -15,7 +15,7 @@ def warnings_demo(tmpdir: Path) -> Path:
         textwrap.dedent(
             """
         from logging import basicConfig
-        from pip._internal.utils import deprecation
+        from pipu._internal.utils import deprecation
 
         deprecation.install_warning_logger()
         basicConfig()

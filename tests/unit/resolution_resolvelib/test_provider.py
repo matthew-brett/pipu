@@ -1,16 +1,16 @@
 from typing import TYPE_CHECKING, List, Optional
 
-from pip._vendor.resolvelib.resolvers import RequirementInformation
+from pipu._vendor.resolvelib.resolvers import RequirementInformation
 
-from pip._internal.models.candidate import InstallationCandidate
-from pip._internal.models.link import Link
-from pip._internal.req.constructors import install_req_from_req_string
-from pip._internal.resolution.resolvelib.factory import Factory
-from pip._internal.resolution.resolvelib.provider import PipProvider
-from pip._internal.resolution.resolvelib.requirements import SpecifierRequirement
+from pipu._internal.models.candidate import InstallationCandidate
+from pipu._internal.models.link import Link
+from pipu._internal.req.constructors import install_req_from_req_string
+from pipu._internal.resolution.resolvelib.factory import Factory
+from pipu._internal.resolution.resolvelib.provider import PipProvider
+from pipu._internal.resolution.resolvelib.requirements import SpecifierRequirement
 
 if TYPE_CHECKING:
-    from pip._internal.resolution.resolvelib.provider import PreferenceInformation
+    from pipu._internal.resolution.resolvelib.provider import PreferenceInformation
 
 
 def build_requirement_information(

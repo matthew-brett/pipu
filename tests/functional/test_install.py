@@ -11,10 +11,10 @@ from typing import Dict, Iterable, List, Optional, Tuple
 
 import pytest
 
-from pip._internal.cli.status_codes import ERROR, SUCCESS
-from pip._internal.models.index import PyPI, TestPyPI
-from pip._internal.utils.misc import rmtree
-from pip._internal.utils.urls import path_to_url
+from pipu._internal.cli.status_codes import ERROR, SUCCESS
+from pipu._internal.models.index import PyPI, TestPyPI
+from pipu._internal.utils.misc import rmtree
+from pipu._internal.utils.urls import path_to_url
 from tests.lib import (
     CertFactory,
     PipTestEnvironment,
@@ -1288,7 +1288,7 @@ def test_install_package_with_root(script: PipTestEnvironment, data: TestData) -
     )
     # use a function borrowed from distutils
     # to change the root exactly how the --root option does it
-    from pip._internal.locations.base import change_root
+    from pipu._internal.locations.base import change_root
 
     root_path = change_root(os.path.join(script.scratch, "root"), normal_install_path)
     result.did_create(root_path)
@@ -1705,7 +1705,7 @@ def test_install_builds_wheels(script: PipTestEnvironment, data: TestData) -> No
         "python",
         "-c",
         (
-            "from pip._internal.utils import appdirs; "
+            "from pipu._internal.utils import appdirs; "
             'print(appdirs.user_cache_dir("pip"))'
         ),
     )

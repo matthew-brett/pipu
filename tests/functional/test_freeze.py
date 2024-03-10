@@ -6,9 +6,9 @@ from doctest import ELLIPSIS, OutputChecker
 from pathlib import Path
 
 import pytest
-from pip._vendor.packaging.utils import canonicalize_name
+from pipu._vendor.packaging.utils import canonicalize_name
 
-from pip._internal.models.direct_url import DirectUrl, DirInfo
+from pipu._internal.models.direct_url import DirectUrl, DirInfo
 from tests.lib import (
     PipTestEnvironment,
     TestData,
@@ -109,7 +109,7 @@ def test_freeze_with_setuptools(script: PipTestEnvironment) -> None:
     (script.site_packages_path / "mock.py").write_text(
         textwrap.dedent(
             """\
-                import pip._internal.commands.freeze as freeze
+                import pipu._internal.commands.freeze as freeze
                 freeze._should_suppress_build_backends = lambda: False
             """
         )
@@ -121,7 +121,7 @@ def test_freeze_with_setuptools(script: PipTestEnvironment) -> None:
     (script.site_packages_path / "mock.py").write_text(
         textwrap.dedent(
             """\
-                import pip._internal.commands.freeze as freeze
+                import pipu._internal.commands.freeze as freeze
                 freeze._should_suppress_build_backends = lambda: True
             """
         )

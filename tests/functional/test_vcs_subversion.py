@@ -2,8 +2,8 @@ from pathlib import Path
 
 import pytest
 
-from pip._internal.vcs.subversion import Subversion
-from pip._internal.vcs.versioncontrol import RemoteNotFoundError
+from pipu._internal.vcs.subversion import Subversion
+from pipu._internal.vcs.versioncontrol import RemoteNotFoundError
 from tests.lib import PipTestEnvironment, _create_svn_repo, need_svn
 
 

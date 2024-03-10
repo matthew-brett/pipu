@@ -14,19 +14,19 @@ from typing import Any, Callable, Iterator, List, NoReturn, Optional, Tuple, Typ
 from unittest.mock import Mock, patch
 
 import pytest
-from pip._vendor.packaging.requirements import Requirement
+from pipu._vendor.packaging.requirements import Requirement
 
-from pip._internal.exceptions import HashMismatch, HashMissing, InstallationError
-from pip._internal.utils.deprecation import PipDeprecationWarning, deprecated
-from pip._internal.utils.egg_link import egg_link_path_from_location
-from pip._internal.utils.encoding import BOMS, auto_decode
-from pip._internal.utils.glibc import (
+from pipu._internal.exceptions import HashMismatch, HashMissing, InstallationError
+from pipu._internal.utils.deprecation import PipDeprecationWarning, deprecated
+from pipu._internal.utils.egg_link import egg_link_path_from_location
+from pipu._internal.utils.encoding import BOMS, auto_decode
+from pipu._internal.utils.glibc import (
     glibc_version_string,
     glibc_version_string_confstr,
     glibc_version_string_ctypes,
 )
-from pip._internal.utils.hashes import Hashes, MissingHashes
-from pip._internal.utils.misc import (
+from pipu._internal.utils.hashes import Hashes, MissingHashes
+from pipu._internal.utils.misc import (
     HiddenText,
     build_netloc,
     build_url_from_netloc,
@@ -48,7 +48,7 @@ from pip._internal.utils.misc import (
     split_auth_netloc_from_url,
     tabulate,
 )
-from pip._internal.utils.setuptools_build import make_setuptools_shim_args
+from pipu._internal.utils.setuptools_build import make_setuptools_shim_args
 
 
 class Tests_EgglinkPath:
@@ -67,7 +67,7 @@ class Tests_EgglinkPath:
         )
 
         # patches
-        from pip._internal.utils import egg_link as utils
+        from pipu._internal.utils import egg_link as utils
 
         self.old_site_packages = utils.site_packages
         self.mock_site_packages = utils.site_packages = "SITE_PACKAGES"
@@ -83,7 +83,7 @@ class Tests_EgglinkPath:
         self.mock_isfile = path.isfile = Mock()
 
     def teardown_method(self) -> None:
-        from pip._internal.utils import egg_link as utils
+        from pipu._internal.utils import egg_link as utils
 
         utils.site_packages = self.old_site_packages
         utils.running_under_virtualenv = self.old_running_under_virtualenv
@@ -859,7 +859,7 @@ def test_hide_url() -> None:
 @pytest.fixture()
 def patch_deprecation_check_version() -> Iterator[None]:
     # We do this, so that the deprecation tests are easier to write.
-    import pip._internal.utils.deprecation as d
+    import pipu._internal.utils.deprecation as d
 
     old_version = d.current_version
     d.current_version = "1.0"

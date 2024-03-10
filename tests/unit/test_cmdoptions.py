@@ -5,8 +5,8 @@ from venv import EnvBuilder
 
 import pytest
 
-from pip._internal.cli.cmdoptions import _convert_python_version
-from pip._internal.cli.main_parser import identify_python_interpreter
+from pipu._internal.cli.cmdoptions import _convert_python_version
+from pipu._internal.cli.main_parser import identify_python_interpreter
 
 
 @pytest.mark.parametrize(

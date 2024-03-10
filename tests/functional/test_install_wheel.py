@@ -168,7 +168,7 @@ def get_header_scheme_path_for_script(
     script: PipTestEnvironment, dist_name: str
 ) -> Path:
     command = (
-        "from pip._internal.locations import get_scheme;"
+        "from pipu._internal.locations import get_scheme;"
         f"scheme = get_scheme({dist_name!r});"
         "print(scheme.headers);"
     )

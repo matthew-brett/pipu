@@ -4,9 +4,9 @@
 from optparse import Values
 from typing import List, Tuple
 
-from pip._internal.cli import cmdoptions
-from pip._internal.cli.base_command import Command
-from pip._internal.commands import CommandInfo, commands_dict
+from pipu._internal.cli import cmdoptions
+from pipu._internal.cli.base_command import Command
+from pipu._internal.commands import CommandInfo, commands_dict
 
 
 class FakeCommand(Command):

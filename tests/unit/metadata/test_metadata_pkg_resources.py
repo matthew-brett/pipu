@@ -4,11 +4,11 @@ from typing import List, cast
 from unittest import mock
 
 import pytest
-from pip._vendor.packaging.specifiers import SpecifierSet
-from pip._vendor.packaging.version import parse as parse_version
+from pipu._vendor.packaging.specifiers import SpecifierSet
+from pipu._vendor.packaging.version import parse as parse_version
 
-from pip._internal.exceptions import UnsupportedWheel
-from pip._internal.metadata.pkg_resources import (
+from pipu._internal.exceptions import UnsupportedWheel
+from pipu._internal.metadata.pkg_resources import (
     Distribution,
     Environment,
     InMemoryMetadata,

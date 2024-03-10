@@ -5,19 +5,19 @@ from typing import List, Optional, Type, TypeVar, cast
 from unittest import mock
 
 import pytest
-from pip._vendor.packaging.specifiers import SpecifierSet
-from pip._vendor.packaging.utils import NormalizedName
+from pipu._vendor.packaging.specifiers import SpecifierSet
+from pipu._vendor.packaging.utils import NormalizedName
 
-from pip._internal.exceptions import (
+from pipu._internal.exceptions import (
     InstallationError,
     NoneMetadataError,
     UnsupportedPythonVersion,
 )
-from pip._internal.metadata import BaseDistribution
-from pip._internal.models.candidate import InstallationCandidate
-from pip._internal.req.constructors import install_req_from_line
-from pip._internal.req.req_set import RequirementSet
-from pip._internal.resolution.legacy.resolver import (
+from pipu._internal.metadata import BaseDistribution
+from pipu._internal.models.candidate import InstallationCandidate
+from pipu._internal.req.constructors import install_req_from_line
+from pipu._internal.req.req_set import RequirementSet
+from pipu._internal.resolution.legacy.resolver import (
     Resolver,
     _check_dist_requires_python,
 )

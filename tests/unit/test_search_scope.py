@@ -1,5 +1,5 @@
-from pip._internal.models.search_scope import SearchScope
-from pip._internal.req.constructors import install_req_from_line
+from pipu._internal.models.search_scope import SearchScope
+from pipu._internal.req.constructors import install_req_from_line
 
 
 class TestSearchScope:

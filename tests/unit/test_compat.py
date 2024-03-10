@@ -3,7 +3,7 @@ from pathlib import Path
 
 import pytest
 
-from pip._internal.utils.compat import get_path_uid
+from pipu._internal.utils.compat import get_path_uid
 
 
 def test_get_path_uid() -> None:

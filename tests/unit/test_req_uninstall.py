@@ -6,8 +6,8 @@ from unittest.mock import Mock
 
 import pytest
 
-import pip._internal.req.req_uninstall
-from pip._internal.req.req_uninstall import (
+import pipu._internal.req.req_uninstall
+from pipu._internal.req.req_uninstall import (
     StashedUninstallPathSet,
     UninstallPathSet,
     UninstallPthEntries,

@@ -3,8 +3,8 @@ import subprocess
 import urllib.request
 from pathlib import Path
 
-from pip._internal.utils.misc import hide_url
-from pip._internal.vcs import vcs
+from pipu._internal.utils.misc import hide_url
+from pipu._internal.vcs import vcs
 
 
 def _create_svn_initools_repo(initools_dir: str) -> None:

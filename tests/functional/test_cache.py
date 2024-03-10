@@ -13,7 +13,7 @@ def cache_dir(script: PipTestEnvironment) -> str:
     result = script.run(
         "python",
         "-c",
-        "from pip._internal.locations import USER_CACHE_DIR;print(USER_CACHE_DIR)",
+        "from pipu._internal.locations import USER_CACHE_DIR;print(USER_CACHE_DIR)",
     )
     return result.stdout.strip()
 

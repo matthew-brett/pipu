@@ -8,11 +8,11 @@ from unittest.mock import Mock, patch
 
 import pytest
 
-from pip._internal.cli.base_command import Command
-from pip._internal.cli.status_codes import SUCCESS
-from pip._internal.utils import temp_dir
-from pip._internal.utils.logging import BrokenStdoutLoggingError
-from pip._internal.utils.temp_dir import TempDirectory
+from pipu._internal.cli.base_command import Command
+from pipu._internal.cli.status_codes import SUCCESS
+from pipu._internal.utils import temp_dir
+from pipu._internal.utils.logging import BrokenStdoutLoggingError
+from pipu._internal.utils.temp_dir import TempDirectory
 
 
 @pytest.fixture

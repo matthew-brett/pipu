@@ -44,9 +44,9 @@ from installer import install
 from installer.destinations import SchemeDictionaryDestination
 from installer.sources import WheelFile
 
-from pip import __file__ as pip_location
-from pip._internal.locations import _USE_SYSCONFIG
-from pip._internal.utils.temp_dir import global_tempdir_manager
+from pipu import __file__ as pip_location
+from pipu._internal.locations import _USE_SYSCONFIG
+from pipu._internal.utils.temp_dir import global_tempdir_manager
 from tests.lib import (
     DATA_DIR,
     SRC_DIR,
@@ -60,7 +60,7 @@ from tests.lib.server import MockServer, make_mock_server
 from tests.lib.venv import VirtualEnvironment, VirtualEnvironmentType
 
 if TYPE_CHECKING:
-    from pip._vendor.typing_extensions import Self
+    from pipu._vendor.typing_extensions import Self
 
 
 def pytest_addoption(parser: Parser) -> None:

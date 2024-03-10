@@ -9,24 +9,24 @@ from unittest import mock
 
 import pytest
 
-import pip._internal.req.req_file  # this will be monkeypatched
-from pip._internal.exceptions import InstallationError, RequirementsFileParseError
-from pip._internal.index.package_finder import PackageFinder
-from pip._internal.models.format_control import FormatControl
-from pip._internal.network.session import PipSession
-from pip._internal.req.constructors import (
+import pipu._internal.req.req_file  # this will be monkeypatched
+from pipu._internal.exceptions import InstallationError, RequirementsFileParseError
+from pipu._internal.index.package_finder import PackageFinder
+from pipu._internal.models.format_control import FormatControl
+from pipu._internal.network.session import PipSession
+from pipu._internal.req.constructors import (
     install_req_from_editable,
     install_req_from_line,
     install_req_from_parsed_requirement,
 )
-from pip._internal.req.req_file import (
+from pipu._internal.req.req_file import (
     break_args_options,
     ignore_comments,
     join_lines,
     parse_requirements,
     preprocess,
 )
-from pip._internal.req.req_install import InstallRequirement
+from pipu._internal.req.req_install import InstallRequirement
 from tests.lib import TestData, make_test_finder, requirements_file
 
 

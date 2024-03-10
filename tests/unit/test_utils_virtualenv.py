@@ -7,7 +7,7 @@ from typing import List, Optional
 
 import pytest
 
-from pip._internal.utils import virtualenv
+from pipu._internal.utils import virtualenv
 
 
 @pytest.mark.parametrize(

@@ -8,12 +8,12 @@ from unittest.mock import Mock, patch
 
 import pytest
 
-from pip._internal.exceptions import HashMismatch
-from pip._internal.models.link import Link
-from pip._internal.network.download import Downloader
-from pip._internal.network.session import PipSession
-from pip._internal.operations.prepare import unpack_url
-from pip._internal.utils.hashes import Hashes
+from pipu._internal.exceptions import HashMismatch
+from pipu._internal.models.link import Link
+from pipu._internal.network.download import Downloader
+from pipu._internal.network.session import PipSession
+from pipu._internal.operations.prepare import unpack_url
+from pipu._internal.utils.hashes import Hashes
 from tests.lib import TestData
 from tests.lib.requests_mocks import MockResponse
 

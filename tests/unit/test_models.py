@@ -1,10 +1,10 @@
 """Tests for various classes in pip._internal.models
 """
 
-from pip._vendor.packaging.version import parse as parse_version
+from pipu._vendor.packaging.version import parse as parse_version
 
-from pip._internal.models import candidate, index
-from pip._internal.models.link import Link
+from pipu._internal.models import candidate, index
+from pipu._internal.models.link import Link
 
 
 class TestPackageIndex:

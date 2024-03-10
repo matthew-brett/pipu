@@ -6,10 +6,10 @@ import re
 from os.path import basename
 from typing import Iterable
 
-from pip._vendor.packaging.utils import canonicalize_name
+from pipu._vendor.packaging.utils import canonicalize_name
 from pytest import mark
 
-from pip._internal.utils.misc import hash_file
+from pipu._internal.utils.misc import hash_file
 from tests.lib import PipTestEnvironment, TestData, TestPipResult
 
 

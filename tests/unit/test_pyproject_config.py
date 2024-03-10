@@ -2,7 +2,7 @@ from typing import Dict, List
 
 import pytest
 
-from pip._internal.commands import create_command
+from pipu._internal.commands import create_command
 
 
 @pytest.mark.parametrize(

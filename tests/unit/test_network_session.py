@@ -6,11 +6,11 @@ from urllib.parse import urlparse
 from urllib.request import getproxies
 
 import pytest
-from pip._vendor import requests
+from pipu._vendor import requests
 
-from pip import __version__
-from pip._internal.models.link import Link
-from pip._internal.network.session import CI_ENVIRONMENT_VARIABLES, PipSession
+from pipu import __version__
+from pipu._internal.models.link import Link
+from pipu._internal.network.session import CI_ENVIRONMENT_VARIABLES, PipSession
 
 
 def get_user_agent() -> str:

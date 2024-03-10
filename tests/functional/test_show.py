@@ -3,9 +3,9 @@ import pathlib
 import re
 import textwrap
 
-from pip import __version__
-from pip._internal.commands.show import search_packages_info
-from pip._internal.utils.unpacking import untar_file
+from pipu import __version__
+from pipu._internal.commands.show import search_packages_info
+from pipu._internal.utils.unpacking import untar_file
 from tests.lib import (
     PipTestEnvironment,
     TestData,

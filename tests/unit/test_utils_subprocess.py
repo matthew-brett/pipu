@@ -5,11 +5,11 @@ from typing import List, Optional, Tuple, Type
 
 import pytest
 
-from pip._internal.cli.spinners import SpinnerInterface
-from pip._internal.exceptions import InstallationSubprocessError
-from pip._internal.utils.logging import VERBOSE
-from pip._internal.utils.misc import hide_value
-from pip._internal.utils.subprocess import (
+from pipu._internal.cli.spinners import SpinnerInterface
+from pipu._internal.exceptions import InstallationSubprocessError
+from pipu._internal.utils.logging import VERBOSE
+from pipu._internal.utils.misc import hide_value
+from pipu._internal.utils.subprocess import (
     CommandArgs,
     call_subprocess,
     format_command_args,

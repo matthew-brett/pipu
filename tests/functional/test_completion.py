@@ -140,7 +140,7 @@ def autocomplete(
         result = autocomplete_script.run(
             "python",
             "-c",
-            "from pip._internal.cli.autocompletion import autocomplete;"
+            "from pipu._internal.cli.autocompletion import autocomplete;"
             "autocomplete()",
             expect_error=True,
             cwd=cwd,

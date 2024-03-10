@@ -31,18 +31,18 @@ from typing import (
 from zipfile import ZipFile
 
 import pytest
-from pip._vendor.packaging.utils import canonicalize_name
+from pipu._vendor.packaging.utils import canonicalize_name
 from scripttest import FoundDir, FoundFile, ProcResult, TestFileEnvironment
 
-from pip._internal.cli.main import main as pip_entry_point
-from pip._internal.index.collector import LinkCollector
-from pip._internal.index.package_finder import PackageFinder
-from pip._internal.locations import get_major_minor_version
-from pip._internal.models.search_scope import SearchScope
-from pip._internal.models.selection_prefs import SelectionPreferences
-from pip._internal.models.target_python import TargetPython
-from pip._internal.network.session import PipSession
-from pip._internal.utils.egg_link import _egg_link_names
+from pipu._internal.cli.main import main as pip_entry_point
+from pipu._internal.index.collector import LinkCollector
+from pipu._internal.index.package_finder import PackageFinder
+from pipu._internal.locations import get_major_minor_version
+from pipu._internal.models.search_scope import SearchScope
+from pipu._internal.models.selection_prefs import SelectionPreferences
+from pipu._internal.models.target_python import TargetPython
+from pipu._internal.network.session import PipSession
+from pipu._internal.utils.egg_link import _egg_link_names
 from tests.lib.venv import VirtualEnvironment
 from tests.lib.wheel import make_wheel
 
@@ -65,7 +65,7 @@ def assert_paths_equal(actual: str, expected: str) -> None:
 
 def create_file(path: str, contents: Optional[str] = None) -> None:
     """Create a file on the path, with the given contents"""
-    from pip._internal.utils.misc import ensure_dir
+    from pipu._internal.utils.misc import ensure_dir
 
     ensure_dir(os.path.dirname(path))
     with open(path, "w") as f:

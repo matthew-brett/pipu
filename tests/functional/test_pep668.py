@@ -16,8 +16,8 @@ def patch_check_externally_managed(virtualenv: VirtualEnvironment) -> None:
     # needs to go into), we patch the check to always raise a simple message.
     virtualenv.sitecustomize = textwrap.dedent(
         """\
-        from pip._internal.exceptions import ExternallyManagedEnvironment
-        from pip._internal.utils import misc
+        from pipu._internal.exceptions import ExternallyManagedEnvironment
+        from pipu._internal.utils import misc
 
         def check_externally_managed():
             raise ExternallyManagedEnvironment("I am externally managed")

@@ -2,11 +2,11 @@ import logging
 from typing import FrozenSet, List, Optional, Set, Tuple
 
 import pytest
-from pip._vendor.packaging.specifiers import SpecifierSet
-from pip._vendor.packaging.tags import Tag
+from pipu._vendor.packaging.specifiers import SpecifierSet
+from pipu._vendor.packaging.tags import Tag
 
-from pip._internal.index.collector import LinkCollector
-from pip._internal.index.package_finder import (
+from pipu._internal.index.collector import LinkCollector
+from pipu._internal.index.package_finder import (
     CandidateEvaluator,
     CandidatePreferences,
     FormatControl,
@@ -18,13 +18,13 @@ from pip._internal.index.package_finder import (
     _find_name_version_sep,
     filter_unallowed_hashes,
 )
-from pip._internal.models.link import Link
-from pip._internal.models.search_scope import SearchScope
-from pip._internal.models.selection_prefs import SelectionPreferences
-from pip._internal.models.target_python import TargetPython
-from pip._internal.network.session import PipSession
-from pip._internal.utils.compatibility_tags import get_supported
-from pip._internal.utils.hashes import Hashes
+from pipu._internal.models.link import Link
+from pipu._internal.models.search_scope import SearchScope
+from pipu._internal.models.selection_prefs import SelectionPreferences
+from pipu._internal.models.target_python import TargetPython
+from pipu._internal.network.session import PipSession
+from pipu._internal.utils.compatibility_tags import get_supported
+from pipu._internal.utils.hashes import Hashes
 from tests.lib import CURRENT_PY_VERSION_INFO
 from tests.lib.index import make_mock_candidate
 

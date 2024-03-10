@@ -4,8 +4,8 @@ from typing import Dict
 
 import pytest
 
-from pip._internal.models.link import Link
-from pip._internal.network.download import (
+from pipu._internal.models.link import Link
+from pipu._internal.network.download import (
     _prepare_download,
     parse_content_disposition,
     sanitize_content_filename,

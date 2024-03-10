@@ -9,9 +9,9 @@ from unittest.mock import Mock, patch
 
 import pytest
 
-from pip._internal.utils.misc import HiddenText
-from pip._internal.vcs import vcs
-from pip._internal.vcs.git import Git, RemoteNotFoundError
+from pipu._internal.utils.misc import HiddenText
+from pipu._internal.vcs import vcs
+from pipu._internal.vcs.git import Git, RemoteNotFoundError
 from tests.lib import PipTestEnvironment, _create_test_package, _git_commit
 
 

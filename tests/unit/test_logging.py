@@ -5,13 +5,13 @@ from unittest.mock import patch
 
 import pytest
 
-from pip._internal.utils.logging import (
+from pipu._internal.utils.logging import (
     BrokenStdoutLoggingError,
     IndentingFormatter,
     RichPipStreamHandler,
     indent_log,
 )
-from pip._internal.utils.misc import captured_stderr, captured_stdout
+from pipu._internal.utils.misc import captured_stderr, captured_stdout
 
 logger = logging.getLogger(__name__)
 

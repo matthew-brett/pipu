@@ -2,8 +2,8 @@ from typing import Optional
 
 import pytest
 
-from pip._internal.models.link import Link, links_equivalent
-from pip._internal.utils.hashes import Hashes
+from pipu._internal.models.link import Link, links_equivalent
+from pipu._internal.utils.hashes import Hashes
 
 
 class TestLink:

@@ -5,7 +5,7 @@ from typing import Optional
 
 import pytest
 
-from pip._internal.build_env import BuildEnvironment, _get_system_sitepackages
+from pipu._internal.build_env import BuildEnvironment, _get_system_sitepackages
 from tests.lib import (
     PipTestEnvironment,
     TestPipResult,
@@ -30,15 +30,15 @@ def run_with_build_env(
             import subprocess
             import sys
 
-            from pip._internal.build_env import BuildEnvironment
-            from pip._internal.index.collector import LinkCollector
-            from pip._internal.index.package_finder import PackageFinder
-            from pip._internal.models.search_scope import SearchScope
-            from pip._internal.models.selection_prefs import (
+            from pipu._internal.build_env import BuildEnvironment
+            from pipu._internal.index.collector import LinkCollector
+            from pipu._internal.index.package_finder import PackageFinder
+            from pipu._internal.models.search_scope import SearchScope
+            from pipu._internal.models.selection_prefs import (
                 SelectionPreferences
             )
-            from pip._internal.network.session import PipSession
-            from pip._internal.utils.temp_dir import global_tempdir_manager
+            from pipu._internal.network.session import PipSession
+            from pipu._internal.utils.temp_dir import global_tempdir_manager
 
             link_collector = LinkCollector(
                 session=PipSession(),

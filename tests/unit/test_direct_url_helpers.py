@@ -3,13 +3,13 @@ from functools import partial
 from pathlib import Path
 from unittest import mock
 
-from pip._internal.models.direct_url import ArchiveInfo, DirectUrl, DirInfo, VcsInfo
-from pip._internal.models.link import Link
-from pip._internal.utils.direct_url_helpers import (
+from pipu._internal.models.direct_url import ArchiveInfo, DirectUrl, DirInfo, VcsInfo
+from pipu._internal.models.link import Link
+from pipu._internal.utils.direct_url_helpers import (
     direct_url_as_pep440_direct_reference,
     direct_url_from_link,
 )
-from pip._internal.vcs.git import Git
+from pipu._internal.vcs.git import Git
 
 
 def test_as_pep440_requirement_archive() -> None:

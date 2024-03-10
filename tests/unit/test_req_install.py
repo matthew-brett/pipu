@@ -3,14 +3,14 @@ import tempfile
 from pathlib import Path
 
 import pytest
-from pip._vendor.packaging.requirements import Requirement
+from pipu._vendor.packaging.requirements import Requirement
 
-from pip._internal.exceptions import InstallationError
-from pip._internal.req.constructors import (
+from pipu._internal.exceptions import InstallationError
+from pipu._internal.req.constructors import (
     install_req_from_line,
     install_req_from_req_string,
 )
-from pip._internal.req.req_install import InstallRequirement
+from pipu._internal.req.req_install import InstallRequirement
 
 
 class TestInstallRequirementBuildDirectory:

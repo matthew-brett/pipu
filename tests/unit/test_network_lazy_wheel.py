@@ -1,14 +1,14 @@
 from typing import Iterator
 
-from pip._vendor.packaging.version import Version
+from pipu._vendor.packaging.version import Version
 from pytest import fixture, mark, raises
 
-from pip._internal.exceptions import InvalidWheel
-from pip._internal.network.lazy_wheel import (
+from pipu._internal.exceptions import InvalidWheel
+from pipu._internal.network.lazy_wheel import (
     HTTPRangeRequestUnsupported,
     dist_from_wheel_url,
 )
-from pip._internal.network.session import PipSession
+from pipu._internal.network.session import PipSession
 from tests.lib import TestData
 from tests.lib.server import MockServer, file_response
 
