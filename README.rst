@@ -1,58 +1,28 @@
-pip - The Python Package Installer
-==================================
+pipu - a Python package installer based on pip
+==============================================
 
-.. image:: https://img.shields.io/pypi/v/pip.svg
-   :target: https://pypi.org/project/pip/
-   :alt: PyPI
+Pipu is a drop in replacement for Pip - the Python Package Installer.
 
-.. image:: https://img.shields.io/pypi/pyversions/pip
-   :target: https://pypi.org/project/pip
-   :alt: PyPI - Python Version
+It is designed to act exactly as Pip does with a single exception - it will
+not try and force you into using virtualenvs if you are working on a Python
+distribution like Homebrew or Gentoo.
 
-.. image:: https://readthedocs.org/projects/pip/badge/?version=latest
-   :target: https://pip.pypa.io/en/latest
-   :alt: Documentation
+See the `Pip documentation <https://pip.matthew-brett.io>`_ for usage and
+other instructions.   To use `pipu` just use `pipu` instead of `pip`
+throughout.
 
-pip is the `package installer`_ for Python. You can use pip to install packages from the `Python Package Index`_ and other indexes.
+We will release updates regularly, with a new version every 3 months, closely
+following Pip's own release schedule.
 
-Please take a look at our documentation for how to install and use pip:
-
-* `Installation`_
-* `Usage`_
-
-We release updates regularly, with a new version every 3 months. Find more details in our documentation:
-
-* `Release notes`_
-* `Release process`_
-
-If you find bugs, need help, or want to talk to the developers, please use our mailing lists or chat rooms:
+If you have an issue with Pipu, please first try:
 
 * `Issue tracking`_
-* `Discourse channel`_
-* `User IRC`_
 
-If you want to get involved head over to GitHub to get the source code, look at our development documentation and feel free to jump on the developer mailing lists and chat rooms:
+If you want to get involved, head over to GitHub to get the source code.
 
 * `GitHub page`_
-* `Development documentation`_
-* `Development IRC`_
 
-Code of Conduct
----------------
-
-Everyone interacting in the pip project's codebases, issue trackers, chat
-rooms, and mailing lists is expected to follow the `PSF Code of Conduct`_.
-
-.. _package installer: https://packaging.python.org/guides/tool-recommendations/
 .. _Python Package Index: https://pypi.org
-.. _Installation: https://pip.pypa.io/en/stable/installation/
-.. _Usage: https://pip.pypa.io/en/stable/
-.. _Release notes: https://pip.pypa.io/en/stable/news.html
-.. _Release process: https://pip.pypa.io/en/latest/development/release-process/
-.. _GitHub page: https://github.com/pypa/pip
-.. _Development documentation: https://pip.pypa.io/en/latest/development
-.. _Issue tracking: https://github.com/pypa/pip/issues
-.. _Discourse channel: https://discuss.python.org/c/packaging
-.. _User IRC: https://kiwiirc.com/nextclient/#ircs://irc.libera.chat:+6697/pypa
-.. _Development IRC: https://kiwiirc.com/nextclient/#ircs://irc.libera.chat:+6697/pypa-dev
-.. _PSF Code of Conduct: https://github.com/pypa/.github/blob/main/CODE_OF_CONDUCT.md
+.. _GitHub page: https://github.com/matthew-brett/pipu
+.. _Development documentation: https://matthew-brett.github.io/pipu
+.. _Issue tracking: https://github.com/matthew-brett/pipu/issues
